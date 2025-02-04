@@ -196,17 +196,15 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
-/* End Header section */
 
-/* Hero Section */
-#hero {
+#home {
 	background-image: url(./img/img2.webp);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
 }
-#hero::after {
+#home::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -217,13 +215,13 @@ p {
 	opacity: 0.7;
 	z-index: -1;
 }
-#hero .hero {
+#home .home {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-#hero h1 {
+#home h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
@@ -232,17 +230,17 @@ p {
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
-#hero h1:nth-child(1) {
+#home h1:nth-child(1) {
 	animation-delay: 1s;
 }
-#hero h1:nth-child(2) {
+#home h1:nth-child(2) {
 	animation-delay: 2s;
 }
-#hero h1:nth-child(3) {
+#home h1:nth-child(3) {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
-#hero h1 span {
+#home h1 span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -252,19 +250,16 @@ p {
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(1) span {
+#home h1:nth-child(1) span {
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(2) span {
+#home h1:nth-child(2) span {
 	animation-delay: 1.5s;
 }
-#hero h1:nth-child(3) span {
+#home h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
-
-/* Projects section */
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
@@ -335,9 +330,7 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
-/* End Projects section */
 
-/* About Section */
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
@@ -383,9 +376,7 @@ p {
 	border: 7px solid crimson;
 	z-index: -1;
 }
-/* End About Section */
 
-/* contact Section */
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -428,9 +419,7 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
-/*End contact Section */
 
-/* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
@@ -468,9 +457,7 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
-/* End Footer */
 
-/* Keyframes */
 @keyframes hamburger_puls {
 	0% {
 		opacity: 1;
@@ -502,9 +489,7 @@ p {
 		font-weight: 500;
 	}
 }
-/* End Keyframes */
 
-/* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -514,22 +499,16 @@ p {
 		font-size: 6rem;
 	}
 
-	/* Hero */
-	#hero h1 {
+	#home h1 {
 		font-size: 7rem;
 	}
-	/* End Hero */
 
-	/* Services Section */
 	#skills .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
 
 
-	/* End Services Section */
-
-	/* Project */
 	#projects .project-item {
 		flex-direction: row;
 	}
@@ -548,9 +527,7 @@ p {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	/* End Project */
 
-	/* About */
 	#about .about {
 		flex-direction: row;
 	}
@@ -573,9 +550,7 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
-	/* End About */
 
-	/* contact  */
 	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
@@ -607,13 +582,9 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
-	/* End contact  */
 }
-/* End Media Query For Tablet */
 
-/* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
-	/* header */
 	#header .hamburger {
 		display: none;
 	}
@@ -633,14 +604,12 @@ p {
 	#header .nav-list ul a:after {
 		display: none;
 	}
-	/* End header */
 
 	#skills .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */
 
 
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
@@ -716,7 +685,6 @@ p {
 	color: crimson;
 }
 
-/* Header section */
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -841,17 +809,15 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
-/* End Header section */
 
-/* Hero Section */
-#hero {
+#home {
 	background-image: url(./img/img2.webp);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
 }
-#hero::after {
+#home::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -862,13 +828,13 @@ p {
 	opacity: 0.7;
 	z-index: -1;
 }
-#hero .hero {
+#home .home {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-#hero h1 {
+#home h1 {
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
@@ -877,17 +843,17 @@ p {
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
-#hero h1:nth-child(1) {
+#home h1:nth-child(1) {
 	animation-delay: 1s;
 }
-#hero h1:nth-child(2) {
+#home h1:nth-child(2) {
 	animation-delay: 2s;
 }
-#hero h1:nth-child(3) {
+#home h1:nth-child(3) {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
-#hero h1 span {
+#home h1 span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -897,19 +863,16 @@ p {
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(1) span {
+#home h1:nth-child(1) span {
 	animation-delay: 0.5s;
 }
-#hero h1:nth-child(2) span {
+#home h1:nth-child(2) span {
 	animation-delay: 1.5s;
 }
-#hero h1:nth-child(3) span {
+#home h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
-
-/* Skills Section */
 #skills .skills {
 	flex-direction: column;
 	text-align: center;
@@ -969,9 +932,6 @@ p {
 	color: white;
 	text-align: left;
 }
-/* End Skills Section */
-
-
 
 #certifications .certifications {
 	flex-direction: column;
@@ -1033,7 +993,6 @@ p {
 	text-align: left;
 }
 
-/* Projects section */
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
@@ -1104,9 +1063,7 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
-/* End Projects section */
 
-/* About Section */
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
@@ -1152,9 +1109,7 @@ p {
 	border: 7px solid crimson;
 	z-index: -1;
 }
-/* End About Section */
 
-/* contact Section */
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -1197,9 +1152,7 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
-/*End contact Section */
 
-/* Footer */
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
@@ -1271,9 +1224,7 @@ p {
 		font-weight: 500;
 	}
 }
-/* End Keyframes */
 
-/* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -1283,20 +1234,15 @@ p {
 		font-size: 6rem;
 	}
 
-	/* Hero */
-	#hero h1 {
+	#home h1 {
 		font-size: 7rem;
 	}
-	/* End Hero */
 
-	/* Services Section */
 	#skills .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Services Section */
 
-	/* Project */
 	#projects .project-item {
 		flex-direction: row;
 	}
@@ -1315,9 +1261,7 @@ p {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	/* End Project */
 
-	/* About */
 	#about .about {
 		flex-direction: row;
 	}
@@ -1340,9 +1284,7 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
-	/* End About */
 
-	/* contact  */
 	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
@@ -1374,13 +1316,8 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
-	/* End contact  */
 }
-/* End Media Query For Tablet */
-
-/* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
-	/* header */
 	#header .hamburger {
 		display: none;
 	}
@@ -1400,11 +1337,9 @@ p {
 	#header .nav-list ul a:after {
 		display: none;
 	}
-	/* End header */
 
 	#skills .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */
